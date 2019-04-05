@@ -2,11 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Postform from "./compnents/Postform";
 import Posts from "./compnents/Posts";
+import store from "./store";
 import { Provider } from "react-redux";
 import "./styles.css";
-import { createStore, applyMiddleware } from "redux";
-
-const store = createStore(() => [], {}, applyMiddleware());
 
 function App() {
   return (
